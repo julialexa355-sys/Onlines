@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171717">
+  <meta name="description" content="NORDEN MEN - Fashion pria minimalis modern">
+  <title>NORDEN MEN — Modern Essentials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    GAYA BARU, KARAKTER LEBIH KUAT
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#">
+      NORDEN<span>MEN</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#koleksi">Koleksi</a>
+      <a href="#unggulan">Unggulan</a>
+      <a href="#tentang">Tentang Kami</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle"
+        aria-label="Cari produk">
+        <svg viewBox="0 0 24 24" width="22" height="22"
+          fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="10.8" cy="10.8" r="6.8"></circle>
+          <path d="m16 16 5 5"></path>
+        </svg>
+      </button>
+
+      <button class="cart-button" id="cartOpen">
+        KERANJANG <span id="cartCount">0</span>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Buka menu">☰</button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#koleksi">Koleksi</a>
+    <a href="#unggulan">Unggulan</a>
+    <a href="#tentang">Tentang Kami</a>
+  </nav>
+
+  <div class="search-bar" id="searchBar">
+    <input id="searchInput" type="search"
+      placeholder="Cari produk fashion..."
+      aria-label="Cari produk">
+    <button id="clearSearch">Hapus</button>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY UNIFORM</p>
+
+        <h1>
+          Gaya simpel.<br>
+          <em>Karakter kuat.</em>
+        </h1>
+
+        <p class="hero-description">
+          Fashion pria minimalis untuk setiap hari.
+          Pilih outfit nyaman dengan desain modern
+          yang mudah dipadukan.
+        </p>
+
+        <a class="primary-button" href="#koleksi">
+          JELAJAHI KOLEKSI <span>↗</span>
+        </a>
+
+        <div class="hero-note">
+          <span class="dot"></span>
+          DIRANCANG UNTUK DIPAKAI SETIAP HARI
+        </div>
+      </div>
+
+      <div class="hero-image"
+        role="img"
+        aria-label="Fashion pria minimalis">
+        <div class="image-label">
+          <span>01 / ESSENTIALS</span>
+          <span>LESS, BUT BETTER.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="benefits">
+      <div>
+        <span>01</span>
+        <p>
+          <strong>DESAIN TIMELESS</strong>
+          <small>Gaya yang tidak lekang tren</small>
+        </p>
+      </div>
+
+      <div>
+        <span>02</span>
+        <p>
+          <strong>NYAMAN DIPAKAI</strong>
+          <small>Untuk aktivitas sehari-hari</small>
+        </p>
+      </div>
+
+      <div>
+        <span>03</span>
+        <p>
+          <strong>MUDAH DIPADUKAN</strong>
+          <small>Warna simpel dan elegan</small>
+        </p>
+      </div>
+    </section>
+
+    <!-- KATALOG PRODUK -->
+    <section class="products-section" id="koleksi">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TEMUKAN GAYAMU</p>
+          <h2>Koleksi pilihan<span>.</span></h2>
+        </div>
+
+        <p>
+          Pilihan outfit pria modern<br>
+          untuk setiap kesempatan.
+        </p>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="category-filters" id="categoryFilters">
+          <button class="filter active"
+            data-category="Semua">Semua</button>
+          <button class="filter"
+            data-category="Kaos">Kaos</button>
+          <button class="filter"
+            data-category="Kemeja">Kemeja</button>
+          <button class="filter"
+            data-category="Celana">Celana</button>
+          <button class="filter"
+            data-category="Outer">Outer</button>
+        </div>
+
+        <label class="sort-label">
+          URUTKAN
+          <select id="sortSelect">
+            <option value="featured">Pilihan</option>
+            <option value="low">Harga terendah</option>
+            <option value="high">Harga tertinggi</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- Produk dimuat oleh script.js -->
+      <div class="product-grid" id="productGrid"></div>
+
+      <p class="demo-note">
+        Produk dan harga pada website ini merupakan contoh.
+      </p>
+    </section>
+
+    <!-- BANNER UNGGULAN -->
+    <section class="editorial" id="unggulan">
+      <div class="editorial-image"
+        role="img"
+        aria-label="Inspirasi outfit pria"></div>
+
+      <div class="editorial-copy">
+        <p class="eyebrow">BUILT AROUND YOU</p>
+
+        <h2>
+          Tak perlu ramai<br>
+          untuk terlihat <em>berbeda.</em>
+        </h2>
+
+        <p>
+          Bangun gaya personal dengan potongan
+          sederhana dan warna yang mudah dipadukan.
+        </p>
+
+        <a href="#koleksi" class="text-link">
+          TEMUKAN ITEM FAVORIT ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- PENUTUP -->
+    <section class="newsletter" id="tentang">
+      <p class="eyebrow">NORDEN MEN / DAILY ESSENTIALS</p>
+
+      <h2>
+        Lebih sedikit pilihan.<br>
+        <em>Lebih banyak kemungkinan.</em>
+      </h2>
+
+      <p>Fashion pria modern untuk menemani harimu.</p>
+
+      <a class="primary-button" href="#koleksi">
+        LIHAT PRODUK <span>↗</span>
+      </a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a class="brand footer-brand" href="#">
+      NORDEN<span>MEN</span>
+    </a>
+
+    <p>Modern essentials for everyday living.</p>
+
+    <small>
+      © <span id="year"></span> NORDEN MEN.
+    </small>
+  </footer>
+
+  <!-- KERANJANG BELANJA -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer"
+    aria-label="Keranjang belanja" aria-hidden="true">
+
+    <div class="drawer-header">
+      <div>
+        <p class="eyebrow">PESANANMU</p>
+        <h2>Keranjang <span id="drawerCount">(0)</span></h2>
+      </div>
+
+      <button class="close-button" id="cartClose"
+        aria-label="Tutup keranjang">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="subtotal">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">Rp0</strong>
+      </div>
+
+      <p>
+        Ongkir dan detail pengiriman dikonfirmasi
+        melalui WhatsApp.
+      </p>
+
+      <button class="primary-button checkout-button"
+        id="checkoutButton">
+        PESAN VIA WHATSAPP <span>↗</span>
+      </button>
+
+      <small>
+        Pastikan nomor WhatsApp di script.js sudah benar.
+      </small>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <!-- Hubungkan JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+                       </html>
+                       
